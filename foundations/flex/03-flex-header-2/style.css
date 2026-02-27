@@ -3,18 +3,27 @@ you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
+  
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  padding: 8px;
+ 
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
 .profile-image {
+  
+  
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
@@ -23,6 +32,7 @@ body {
 }
 
 .logo {
+  
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -30,6 +40,7 @@ body {
 }
 
 button {
+  
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
@@ -41,8 +52,32 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  
+  
 }
 
 ul {
+  
+  
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
   list-style-type: none;
+  gap: 16px;
+  padding-left: 16px;
+}
+.left-part {
+  
+  align-items: center;
+  
+  display: flex;
+  flex-direction: row;
+}
+.right-part {
+  align-items: center;
+  
+  gap: 16px;
+  
+  display: flex;
+  flex-direction: row;
 }
